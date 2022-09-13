@@ -12,7 +12,7 @@ app = Flask(__name__)
 def nflookup():
     username = os.getenv('nde_username')
     password = os.getenv('nde_password')
-    nde_api_url = 'https://nde.its.vanderbilt.edu/api/lookup-nfsen-host.py?ipaddress='
+    nde_api_url = os.getenv('nde_url')
     lookup = request.args.get('lookup')
     if not lookup: abort(404)
     try:
