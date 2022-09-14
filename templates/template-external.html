@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+        th, td {
+                padding-left: 10px;
+                padding-right: 20px;
+                }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                IP Address
+            </td>
+            <td>
+                {{resp.ip}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                IP Range
+            </td>
+            <td>
+                {{resp.startip}} - {{resp.endip}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                {{resp.name}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Org
+            </td>
+            <td>
+                <a href="{{resp.org_ref}}">{{resp.org_ref}}</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
